@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Постраничный вывод списка</title>
+<center>
+<form action="listing.php" oninput="result.value = slider.valueAsNumber" method="post">
+<table><tbody>
+    <tr><td>Пользователь:</td><td><input required type="text" name="username" value="root"></td></tr>
+    <tr><td>Пароль:</td><td><input required type="password" name="password" value="119601"></td></tr>
+    <tr><td>БД:</td><td><input required type="text" name="database" value="load_distribution"></td></tr>
+	<tr><td><label for="count">Элементов на странице:</label></td><td><input name="slider" id="count" type="range" min="10" max="90" value="20"><output for="count" name="result">20</output>/90</td></tr>
+    <tr><td colspan="2" align="center"><input type="submit"></td></tr>
+</tbody></table>
+</form>
+</center>
+</head>
+</html>
